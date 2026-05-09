@@ -1,0 +1,81 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fffafc;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbar-brand {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.hero-section {
+    min-height: 75vh;
+    background: linear-gradient(
+        rgba(255,255,255,0.6),
+        rgba(255,255,255,0.6)
+    ),
+    url("../images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-brand {
+    color: #d67fa1 !important;
+}
+
+.btn-dark {
+    background-color: #d67fa1;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #bf6d8c;
+}
+
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.page-header {
+    background-color: #fdeef4;
+}
+
+.btn-pink {
+    background-color: #d67fa1;
+    color: white;
+    border: none;
+}
+
+.btn-pink:hover {
+    background-color: #bf6d8c;
+    color: white;
+}
+
+.product-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.product-card {
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+/* CUSTOM ORDERS */
+
+.custom-order-form,
+.custom-note {
+    background-color: #ffffff;
+}
+
+.custom-order-form .form-control,
+.custom-order-form .form-select {
+    border-radius: 12px;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Orders | Sweetly Pastries</title>
+    <meta name="description" content="Request a custom order from Sweetly Pastries for cookies, rolls, brownies, muffins, and specialty desserts.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.jpg" alt="Sweetly Pastries Logo" height="60">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="custom-orders.html">Custom Orders</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="page-header text-center py-5">
+    <div class="container">
+        <h1 class="fw-bold">Custom Orders</h1>
+        <p class="lead">Need something special? Tell us what you’re craving.</p>
+    </div>
+</header>
+
+<main class="py-5">
+    <div class="container">
+        <div class="row g-5">
+
+            <div class="col-md-5">
+                <h2 class="fw-bold mb-3">How Custom Orders Work</h2>
+
+                <p>
+                    Sweetly Pastries offers custom orders for cookies, rolls, brownies,
+                    muffins, and specialty dessert boxes.
+                </p>
+
+                <p>
+                    Please include the item, flavor, quantity, pickup or delivery preference,
+                    and the date you need your order.
+                </p>
+
+                <div class="custom-note p-4 rounded shadow-sm mt-4">
+                    <h5 class="fw-bold">Order Options</h5>
+                    <ul class="mb-0">
+                        <li>Half dozen</li>
+                        <li>Dozen</li>
+                        <li>Multiple dozen</li>
+                        <li>Custom dessert boxes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <form class="custom-order-form p-4 rounded shadow-sm">
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Your phone number">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="item" class="form-label">What would you like to order?</label>
+                        <input type="text" id="item" class="form-control" placeholder="Example: Cinnamon rolls, s’more cookies, brownies">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Quantity</label>
+                        <select id="quantity" class="form-select">
+                            <option selected disabled>Choose an option</option>
+                            <option>Half dozen</option>
+                            <option>Dozen</option>
+                            <option>Two dozen</option>
+                            <option>Three dozen</option>
+                            <option>Four dozen or more</option>
+                            <option>Custom amount</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Date Needed</label>
+                        <input type="date" id="date" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="delivery" class="form-label">Pickup or Delivery?</label>
+                        <select id="delivery" class="form-select">
+                            <option selected disabled>Choose an option</option>
+                            <option>Home pickup</option>
+                            <option>Delivery in San Antonio area for orders over $75</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Additional Details</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Flavors, special requests, event details, allergies, or notes"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-pink">
+                        Submit Custom Order Request
+                    </button>
+
+                    <p class="small mt-3 mb-0">
+                        This form is currently a request form. Sweetly Pastries will confirm availability, pricing, and pickup or delivery details.
+                    </p>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer class="bg-light py-4 mt-5">
+    <div class="container text-center">
+        <p class="mb-1 fw-bold">Sweetly Pastries</p>
+        <p class="mb-1">Homemade pastries made from scratch with quality ingredients.</p>
+        <p class="mb-0">© 2026 Sweetly Pastries</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
